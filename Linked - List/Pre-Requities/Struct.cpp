@@ -90,6 +90,23 @@ struct List {
         delete temp;
         Tail = temp;
     }
+    void insert(int val,int pos) {
+
+        if(pos < 0) return;
+        if(pos == 0) push_Front(val);
+
+        Node* temp = Head;
+
+        for(int i = 0; i < pos -1; i++) {
+            if(temp == NULL) return;
+            temp = temp->Next;
+        }
+
+        Node* newNOde = new Node(val);
+        newNOde->Next = temp->Next;
+        temp->Next = newNOde;
+
+    }
 
     void PrintLL() {
 
@@ -125,6 +142,8 @@ int main() {
     ll.push_Front(2);
     ll.push_Front(1);
     ll.push_back(3);
+
+    ll.insert(5,2);
 
 
     
