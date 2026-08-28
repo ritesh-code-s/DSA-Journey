@@ -29,8 +29,8 @@ This repository is a work in progress and will continue to grow as I learn new c
 
 ### 🔜 Coming Next
 
-- [ ] Strings
-- [ ] Linked List
+- [x] Strings
+- [x] Linked List
 - [ ] Stack & Queue
 - [ ] Sliding Window
 - [ ] Two Pointers
